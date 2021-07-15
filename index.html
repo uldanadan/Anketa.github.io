@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="./styles/main.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/components.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/mobile.css" />
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+   
+</head>
+
+<body>
+<header>
+    <nav class="nav">
+        <ul>
+            <li>
+                <a href="#persinfo">Личная информация</a>
+            </li>
+            <li>
+                <a href="#experience">Опыт</a>
+            </li>
+            <li>
+                <a href="#js">JavaScript</a>
+            </li>
+            <li>
+                <a href="#aboutme">О себе</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+</header>
+
+<div class="container">
+    <div class="name">Анкета</div>
+
+    <div class="sub-name" id="persinfo">
+        <img src="./icons/persinfo.png" />
+        <div>Личная информация</div>
+    </div>
+    <form class="info-form">
+        <input type="text" placeholder="ФИО">
+        <select id="birthYear" onchange="onBirthYearChange()">
+            <option disabled selected>Год рождения</option>
+            <option value="2003">2003</option>
+            <option value="2003">2002</option>
+            <option value="2001">2001</option>
+            <option value="2000">2000</option>
+        </select>
+        <input type="text" placeholder="Место проживания">
+        <input type="text" placeholder="Skype">
+        <input type="email" placeholder="E-mail">
+    </form>
+
+    <div class="sub-name" id="experience">
+        <img src="./icons/opyt.png" />
+        <div>Расскажите о своем опыте</div>
+    </div>
+    <form class="experience-form">
+        <div class="experience-block">
+            <input type="checkbox" id="experience1" value="experience1">
+            <label for="experience1">БЭС/OOCSS</label>
+            <input type="checkbox" id="experience2" value="experience2">
+            <label for="experience2">Stylus/LESS/SASS</label>
+            <input type="checkbox" id="experience3" value="experience3">
+            <label for="experience3">Знаком с PHP</label>
+        </div>
+        <div class="experience-block">
+            <input type="checkbox" id="experience4" value="experience4">
+            <label for="experience4">Верстаю семантично</label>
+            <input type="checkbox" id="experience5" value="experience5">
+            <label for="experience5">Знаю CMS ModX</label>
+            <input type="checkbox" id="experience6" value="experience6">
+            <label for="experience6">Gulp/GRUNT</label>
+        </div>
+        <div class="experience-block">
+            <input type="checkbox" id="experience7" value="experience7">
+            <label for="experience7">Webpack</label>
+            <input type="checkbox" id="experience8" value="experience8">
+            <label for="experience8">jQuery</label>
+            <input type="checkbox" id="experience9" value="experience9">
+            <label for="experience9">Использую Git</label>
+        </div>
+    </form>
+
+    <div class="sub-name" id="js">
+        <img src="./icons/js.png" />
+        <div>Уровень владения JavaScript</div>
+    </div>
+    
+    <form class="slider-form">
+        <div class="hint"><span>Не владею</span></div>
+        <div class="hint"><span>Использую готовые <br> решения</span></div>
+        <div class="hint"><span>Использую готовые решения <br> и умею и переделывать</span></div>
+        <div class="hint"><span>Пишу сложный JS с нуля</span></div>
+        <input id="slider" type="range" min="0" max="100" value="50" onchange="onSliderChange(event.target.value)">
+        <div id="slider-range" class="slider-filled"></div>
+        <div class="dash"></div>
+        <div class="dash"></div>
+    </form>
+
+    <div class="sub-name" id="aboutme">
+        <img src="./icons/aboutme.png" />
+        <div>Расскажите о себе</div>
+    </div>
+
+    <form class="about-form">
+        <div>Напишите несколько предложений, чем привекла наша вакансия<br> и что вы ожидаете от работы у нас.</div>
+        <textarea name="massage" placeholder="Понравилась тем, что..."></textarea>
+    
+    <div class="button">
+        <input type="submit" value="Готово">
+      </div>
+      </form>
+</div>
+
+<!-- scripts -->
+<script type="text/javascript" src="./js/script.js"></script>
+
+</body>
+</html>
