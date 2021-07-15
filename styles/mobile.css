@@ -1,0 +1,89 @@
+@media only screen and (max-width: 768px) {
+    .container{
+        width: 100%;
+    }
+
+    header {
+        position: fixed;
+        width: 100%;
+        z-index: 10;
+        background-color: white;
+        display: block;
+        height: 80px;
+        border-bottom: 1px solid #E5E5E5;
+    }
+
+    .hamburger {
+        display: block;
+        padding: 20px;
+        box-sizing: content-box;
+    }
+
+    nav {
+        display: none;
+        position: fixed;
+        background-color: white;
+        top: 81px;
+        left: 0;
+        width: 100%;
+        height: 350px;
+    }
+
+    header nav ul {
+        height: 90%;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    nav ul li:not(:last-child) {
+        margin-right: 0px;
+    }
+
+    .experience-form{
+        width: 100%;
+        flex-direction: column;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+
+    .experience-block:not(:last-child){
+        margin: 0 0 20px;
+    }
+
+    .slider-form {
+        width: calc(100% - 40px);
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .info-form {
+        align-items: unset;
+        padding: 0 20px;
+    }
+
+    .about-form {
+        padding: 0 20px;
+    }
+
+    .about-form textarea {
+        margin: 0;
+    }
+
+    input, .info-form select, .about-form textarea {
+        width: 100%;
+    }
+
+    .hint{
+        font-size: 9px;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .hint{
+        font-size: 6px;
+    }
+}

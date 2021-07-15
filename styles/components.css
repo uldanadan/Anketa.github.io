@@ -1,0 +1,111 @@
+/*input select textarea*/
+
+input, select, textarea {
+    height: 60px;
+    width: 520px;
+    border: 1px solid #e8e8e8;
+    border-radius: 6px;
+    font-size: 20px;
+    padding: 0 20px;
+    margin: 0;
+    outline: none !important;
+}
+input, select{
+    text-align-last: center;
+    text-align: center;
+}
+
+textarea[name="massage"]:focus, form input[name="massage"]:focus,
+form input[type="text"]:focus,form input[type="email"]:focus, select:focus{
+    border:solid 1px black;
+}
+
+input[type="submit"]:hover{
+    background-color: #333;
+}
+
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url('../icons/arrow.svg');
+    background-repeat: no-repeat, repeat;
+    background-position: calc(100% - 20px) 50%;
+}
+
+select option {
+    color: #1C1C1C;
+}
+
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #c8c8c8;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #c8c8c8;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #c8c8c8;
+}
+
+
+/*checkbox*/
+
+input[type=checkbox] {
+    display: none;
+}
+
+input[type=checkbox]:checked + label:before {
+    background-color: #435993;
+    color: #fff;
+    text-align: center;
+}
+
+input[type=checkbox] + label {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      margin: 0 0 14px;
+      font-size: 16px;
+}
+
+input[type=checkbox] + label:before {
+    content: "\2714";
+    border: 1px solid #435993;
+    border-radius: 2px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 12px;
+    vertical-align: bottom;
+    color: transparent;
+    transition: .2s;
+}
+
+input[type=checkbox] + label:active:before {
+    transform: scale(0);
+}
+
+/*slider*/
+input[type=range] {
+    padding: 0;
+    background-color: #e8e8e8;
+    -webkit-appearance: none;
+    height: 16px;
+    font-size: unset;
+    border-radius: 0;
+    border: none;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    position: relative;
+    width: 24px;
+    height: 27px;
+    background-image: url('../icons/range.svg');
+    background-size: 100% 100%;
+    margin-top: 55px;
+}

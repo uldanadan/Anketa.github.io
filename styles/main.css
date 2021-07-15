@@ -1,0 +1,236 @@
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    color: #1C1C1C;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    margin: auto;
+}
+
+header {
+    background-color: white;
+    height: 80px;
+    border-bottom: 1px solid #E5E5E5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li:not(:last-child) {
+    margin-right: 75px;
+}
+
+nav ul li a {
+    color: #50649a;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    color: #1C1C1C;
+}
+
+.hamburger {
+    width: 45px;
+    height: 50px;
+    cursor: pointer;
+    display: none;
+}
+
+.hamburger span {
+    width: 80%;
+    height: 4px;
+    border-radius: 5px;
+    background-color: black;
+    display: block;
+    margin-top: 10px;
+    transition: all 0.4s ease-out;
+}
+.hamburger.open span:nth-child(2) {
+    background-color: #333;
+    display: none;
+}
+
+.hamburger.open span:nth-child(1) {
+    transform: rotate(45deg) translateX(11px) translateY(7px);
+}
+
+.hamburger.open span:nth-child(3) {
+    transform: rotate(-45deg) translateX(2px) translateY(1px);
+}
+
+
+.container {
+    width: 768px;
+    margin: 0 auto;
+}
+
+.name {
+    margin-top: 152px;
+    text-align: center;
+    font-size: 50px;
+    line-height: 100%;
+    margin-bottom: 50px;
+    font-weight: 200;
+}
+
+.sub-name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sub-name div {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+.info-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 48px;
+    margin-bottom: 72px;
+}
+
+.info-form > *:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+.info-form select {
+    width: 324px;
+    color: #c8c8c8;
+}
+
+.experience-form {
+    display: flex;
+    margin-top: 54px;
+    margin-bottom: 134px;
+}
+
+.experience-block:nth-child(2) {
+    margin: 0 90px 0 116px;
+}
+
+.slider-form {
+    margin-top: 82px;
+    margin-bottom: 70px;
+    position: relative;
+}
+
+.slider-form input {
+    width: 100%;
+}
+
+.slider-filled {
+    width: 50%;
+    height: 16px;
+    background-color: #908bc8;
+    position: absolute;
+    top: 0;
+}
+
+.hint {
+    position: absolute;
+    font-size: 13px;
+    line-height: 16px;
+    top: -44px;
+    height: 32px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.hint span {
+    position: relative;
+    color: #2e211c;
+}
+
+.hint span:after {
+    position: absolute;
+    content: "";
+    height: 8px;
+    top: 18px;
+    border-left: 1px dotted;
+    left: 0;
+}
+
+.slider-form div:nth-child(2) {
+    left: 25%;
+}
+
+.slider-form div:nth-child(2) span:after, .slider-form div:nth-child(3) span:after {
+    top: 34px
+}
+
+.slider-form div:nth-child(3) {
+    left: 50%;
+}
+
+.slider-form div:nth-child(4) {
+    right: 0;
+}
+
+.slider-form div:nth-child(4) span:after {
+    right: 0;
+    left: unset;
+}
+
+.dash {
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    background-color: #FFFFFF;
+    left: 25%;
+    top: 0;
+}
+
+.slider-form div:last-child {
+    left: 50%;
+}
+
+.about-form {
+    margin-top: 23px;
+}
+
+.about-form div {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    margin-bottom: 38px;
+}
+
+.about-form textarea {
+    display: block;
+    width: 522px;
+    height: 182px;
+    padding: 26px 22px;
+    font-size: 20px;
+    margin: 0 auto;
+    text-align-last: left;
+}
+
+input[type="submit"]{
+    display: block;
+    margin: 68px auto 74px;
+    width: 115px;
+    height: 50px;
+    border:none;
+    outline: none;
+    font-size: 16px;
+    color: white;
+    background-color: #1A4B78;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.1s ease-in;
+}
